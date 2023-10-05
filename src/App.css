@@ -1,4 +1,10 @@
 .wrapper{
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
+.wrapper Sidebar{
+  width: 50%;
+}

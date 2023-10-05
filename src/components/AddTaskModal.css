@@ -1,0 +1,84 @@
+/* AddTaskModal.css */
+
+.modal-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* Added a subtle border at the bottom */
+  }
+  
+  /* AddTaskModal.css */
+
+.modal-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 6px; /* Add margin at the bottom for spacing */
+  }
+  
+  .task-name,
+  .task-description,
+  .task-deadline {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px; /* Add margin at the bottom for spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+
+  .task-description{
+    height: 100px;
+  }
+  
+  /* Style for the date input */
+input[type="date"] {
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: white; /* Add a background color */
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Style for the input when it's focused */
+  input[type="date"]:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+  }
+  
+  /* Optional: Style for the input when it's invalid (e.g., if a date is not selected) */
+  input[type="date"]:invalid {
+    border-color: #dc3545; /* Change the border color for invalid input */
+  }
+  
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+  }
+
+  /* Style for the create task button */
+.create-task {
+    background-color: #4caf50; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add a smooth transition for background color change */
+    margin-bottom: 10px;
+  }
+  
+  /* Hover effect */
+  .create-task:hover {
+    background-color: #45a049; /* Change background color on hover */
+  }
+  
+
+  

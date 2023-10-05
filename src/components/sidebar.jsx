@@ -1,30 +1,33 @@
 // Sidebar.js
 import './sidebar.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Sidebar = ({ onSelectSection }) => {
-  const tasks = ['Upcoming', 'Completed', 'Analytics' ]; // Add your sections
-  const categories = ['All', 'Work', 'Personal', 'Shopping', 'Others'];
+  const tasks = ['All', 'Upcoming', 'Completed' ];
 
   return (
-    <div className='container'>
-      <h2>Div Todo</h2>
-        <h3>Tasks</h3>
+    <div className='sidebar-container'>
+      <img src={logo} alt="" />
+      <h3 className='sidebar-heading'>Tasks</h3>
       <ul>
         {tasks.map((section, index) => (
           <li>
-            {section}
+            <Link className='navlinks' to={`/${section.toLowerCase()}`} > 
+                {section}
+            </Link>
           </li>
         ))}
       </ul>
-        <h3>Categories</h3>
+        {/*<h3>Categories</h3>
       <ul>
         {categories.map((section, index) => (
           <li>
             {section}
           </li>
         ))}
-      </ul>
+        </ul>*/}
     </div>
   );
 };

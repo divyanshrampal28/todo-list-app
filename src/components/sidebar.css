@@ -1,7 +1,62 @@
-.container{
-    width: 200px;
-    height: 100vh;
-    background: #f0f0f0;
-    padding: 10px;
+/* sidebar.css */
+
+.sidebar-container {
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjusted width for better sizing */
+    background: #0B222C; /* Changed background color to a darker shade */
+    padding: 20px; /* Increased padding for better spacing */
     margin-right: 10px;
-}
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content horizontally */
+  }
+  
+  .sidebar-container h2 {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    color: #ecf0f1; /* Changed text color to a lighter shade */
+  }
+  
+  .sidebar-container h3 {
+    margin-top: 20px; /* Increased margin for better spacing */
+    color: #ecf0f1; /* Changed text color to a lighter shade */
+  }
+
+  .sidebar-container img{
+    height: 10%;
+  }
+  
+  .sidebar-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the list takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content horizontally */
+  }
+  
+  .sidebar-container li {
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .sidebar-container li:hover {
+    color: #3498db; /* Changed hover color to a lighter shade of blue */
+  }
+
+  .sidebar-heading{
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    border-bottom: #ecf0f1 1px solid;
+  }
+  
+  .navlinks{
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: x-large;
+
+  }

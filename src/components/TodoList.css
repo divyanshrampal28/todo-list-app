@@ -1,3 +1,44 @@
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+    margin-top: 8%;
+}
+
+.floating-container{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px;
+}
+
+.floating-container:hover{
+    height: 300px;
+}
+
+.floating-container:hover .floating-button{
+    box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+    transform: translatey(5px);
+    transition: all 0.3s;
+}
+
+.floating-button{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(44, 179, 240, 0.3);
+    cursor: pointer;   
+    border: none;
 }

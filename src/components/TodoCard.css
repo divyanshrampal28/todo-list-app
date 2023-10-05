@@ -7,20 +7,27 @@
     padding: 15px;
     margin: 10px;
     width: 200px;
-    height: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ensure the card does not exceed a certain width */
+    overflow: hidden;
+    white-space: nowrap;
   }
   
   .card-container h4 {
     margin-bottom: 10px;
-    color: #333;
+    color: black;
   }
   
   .card-container p {
-    color: #666;
+    color: black;
+    width: 100%;
   }
   
-  .card-container button {
-    background-color: #4caf50;
+  .btn{
+    background-color: #0B222C;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -30,7 +37,25 @@
     transition: background-color 0.3s;
   }
   
-  .card-container button:hover {
+  .btn:hover {
     background-color: #45a049;
+  }
+  
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-header img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .card-header button{
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
   }
   
