@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import "./TodoCard.css";
 import open from '../assets/share.png';
+import open2 from '../assets/share-white.png';
 import DetailsModal from './DetailsModal'; // Import the modal component
 
 const TodoCard = ({ task, onUpdate, onDelete, onComplete }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setHovered] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -18,7 +20,16 @@ const TodoCard = ({ task, onUpdate, onDelete, onComplete }) => {
     <div className='card-container'>
       <div className="card-header">
         <h3>{task.title}</h3>
-        <button onClick={handleOpenModal}><img src={open} alt="" /></button>
+        <button 
+            onClick={handleOpenModal} 
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+        >
+          <img 
+            src={isHovered ? open2 : open}
+            alt=""
+          />
+        </button>
       </div>
       <p>Deadline: {task.deadline}</p>
       <button className="btn" onClick={() => onUpdate(task)}>Update</button>

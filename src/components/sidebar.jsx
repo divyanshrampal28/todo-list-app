@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Sidebar = ({ onSelectSection }) => {
-  const tasks = ['All', 'Upcoming', 'Completed' ];
+  const tasks = ['All', 'Upcoming', 'Completed', 'Settings'];
 
   return (
     <div className='sidebar-container'>
       <img src={logo} alt="" />
-      <h3 className='sidebar-heading'>Tasks</h3>
+      <h2 className='sidebar-heading'>TODO APP</h2>
       <ul>
         {tasks.map((section, index) => (
           <li>
@@ -20,14 +20,6 @@ const Sidebar = ({ onSelectSection }) => {
           </li>
         ))}
       </ul>
-        {/*<h3>Categories</h3>
-      <ul>
-        {categories.map((section, index) => (
-          <li>
-            {section}
-          </li>
-        ))}
-        </ul>*/}
     </div>
   );
 };
