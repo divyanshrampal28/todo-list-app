@@ -1,4 +1,4 @@
-# React Todo App
+# Todo List App
 
 ## Overview
 
