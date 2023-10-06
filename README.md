@@ -24,6 +24,11 @@ Check out the live demo of the Todo App [here](https://boisterous-boba-fd51ed.ne
 
 - **Export User Data**: Users can export their task data in the form of a CSV file.
 
+## Screenshot
+
+![image](https://github.com/divyanshrampal28/todo-list-app/assets/145643067/e8904868-e280-4afd-b0bc-fbbeee97aef4)
+
+
 ## Getting Started
 
   **Clone the Repository:**
